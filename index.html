@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Temperature Conversion Table">
+    <meta name="author" content="Fatih Şennik">
+  
+
+    <title>Temperature Conversion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Easy Temperature Conversion</h3>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-md-center nav-justified w-100">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Temperature Project <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+               <script TYPE="text/javascript">
+						emailE = 'senniksoft.com'
+						emailE = ( 'freelancer' + '@' + emailE )
+						document.write( '<A href="mailto:' + emailE + '">' + emailE + '</a>' )
+					</script>
+                <a class="nav-link" href="#">Say Hello :) </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.senniksoft.com">Hire Me !</a>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Temperature Info</h1>
+        <p class="lead">Temperature is a physical quantity that expresses the subjective perceptions of hot and cold. Temperature is measured with a thermometer, historically calibrated in various temperature scales and units of measurement. The most commonly used scales are the Celsius scale, denoted in °C (informally, degrees centigrade), the Fahrenheit scale (°F), and the Kelvin scale. The kelvin (K) is the unit of temperature in the International System of Units (SI), in which temperature is one of the seven fundamental base units.</p>
+        <p><a class="btn btn-lg btn-success" href="https://en.wikipedia.org/wiki/Temperature" role="button">Read More on Wiki</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Celsius to Fahrenheit">
+          <div class="card-body">
+          <h2>Celsius (C or o) to Fahrenheit</h2>
+          <p class="card-text">its math formula is (C * 9/5) + 32</p>
+          <div class="input-group">
+      <span class="input-group-btn">
+        <button id="convert-to-fahrenheit-button" type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Fahrenheit">Convert</button>
+      </span>
+      <input type="text"  class="form-control tempreaturevalue" placeholder="Enter Celsius" aria-label="Enter Celsius">
+      
+    </div>
+          
+          <div id="celsius-to-fahrenheit" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(F)" aria-label="(F)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+          
+         
+          
+          
+         </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Celsius to Kelvin">
+          <div class="card-body">
+          <h2>Celsius (C or o) to Kelvin</h2>
+          <p class="card-text">its math formula is C + 273.15</p>
+          <div class="input-group">
+      <span class="input-group-btn">
+        <button type="button" id ="celsius-to-kelvin-button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Kelvin">Convert</button>
+      </span>
+      <input type="text"  class="form-control tempreaturevalue" placeholder="Enter Celsius" aria-label="Enter Celsius">
+      
+     
+    </div>
+        <div id="celsius-to-kelvin" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(K)" aria-label="(K)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+        
+        
+        
+        
+        
+         </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Fahrenheit to Celsius">
+          <div class="card-body">
+          <h2>Fahrenheit (F) to Celsius</h2>
+          <p class="card-text">its math formula is (F - 32) * 5/9</p>
+         <div class="input-group">
+     <span class="input-group-btn">
+        <button type="button" id = "fahrenheit-to-celsius-button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Celsius">Convert</button>
+      </span>
+      <input type="text"  class="form-control tempreaturevalue" placeholder="Enter Fahrenheit (F)" aria-label="Enter Fahrenheit (F)">
+      
+    </div>
+        <div id="fahrenheit-to-celsius" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(K)" aria-label="(K)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+         </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      
+      
+  <div class="row" style="margin-top: 30px;">
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Fahrenheit to Kelvin">
+          <div class="card-body">
+          <h2>Fahrenheit (F) to Kelvin</h2>
+          <p class="card-text">its math formula is (F - 32) * 5/9 + 273.15</p>
+          <div class="input-group">
+     <span class="input-group-btn">
+        <button type="button" id ="fahrenheit-to-kelvin-button"class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Kelvin">Convert</button>
+      </span>
+      <input type="text"  class="form-control tempreaturevalue" placeholder="Enter Fahrenheit (F)" aria-label="Enter Fahrenheit (F)">
+      
+      
+    </div>
+         <div id="fahrenheit-to-kelvin" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(K)" aria-label="(K)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+         </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Kelvin to Fahrenheit">
+          <div class="card-body">
+          <h2>Kelvin (K) to Fahrenheit (F)</h2>
+          <p class="card-text">its math formula is (K - 273.15) * 9/5 + 32</p>
+           <div class="input-group">
+     <span class="input-group-btn">
+        <button type="button" id ="kelvin-to-fahrenheit-button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Fahrenheit">Convert</button>
+      </span>
+      <input type="text" class="form-control tempreaturevalue" placeholder="Enter Kelvin (K)" aria-label="Enter Fahrenheit (F)">
+      
+    </div>
+        
+         <div id="kelvin-to-fahrenheit" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(F)" aria-label="(F)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+         </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-lg-4">
+         <div class="card" >
+         <img class="card-img-top" src="img/tempreature-converter.png" alt="Convert Kelvin to Celsius">
+          <div class="card-body">
+          <h2>Kelvin (K) to Celsius</h2>
+          <p class="card-text">its math formula is K - 273.15</p>
+           <div class="input-group">
+         <span class="input-group-btn">
+        <button type="button" id="kelvin-to-celsius-button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="to Celsius">Convert</button>
+      </span>
+      <input type="text" class="form-control tempreaturevalue" placeholder="Enter Kelvin (K)" aria-label="Enter Fahrenheit (F)">
+  
+    </div>
+         <div id="kelvin-to-celsius" >
+              
+            <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Result: </span>
+  <input type="text"  class="form-control convertedvalue" placeholder="(C)" aria-label="(C)" aria-describedby="basic-addon1">
+</div>   
+              
+          </div>
+         </div>
+          </div>
+        </div>
+      
+      </div>
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Senniksoft 2017  | Fatih Şennik</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+ <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

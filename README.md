@@ -18,6 +18,9 @@ Convert temperatures to and from celsius, fahrenheit, and kelvin.
   - JavaScript !
   - HTML-5 !
 
+## Authors
+
+* **Fatih Şennik**
 
 License
 ----

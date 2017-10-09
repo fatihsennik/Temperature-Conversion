@@ -16,16 +16,8 @@ Convert temperatures to and from celsius, fahrenheit, and kelvin.
   - Responsive !
   - Built with [Bootstrap 4.0](http://getbootstrap.com/)!
   - JavaScript !
+  - HTML-5 !
 
-
-
-
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
 
 License
 ----

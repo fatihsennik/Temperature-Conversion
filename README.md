@@ -1,8 +1,8 @@
-# Temperature Conversion - Check also https://github.com/senniksoft/react-temperature-converter
+# Temperature Conversion - Check also https://github.com/fatihsennik/react-temperature-converter
 
 
 Convert temperatures to and from celsius, fahrenheit, and kelvin.
-Online Conversion at https://senniksoft.github.io/Temperature-Conversion/
+Online Conversion at https://fatihsennik.github.io/Temperature-Conversion/
 
   - Celsius (C or o) to Fahrenheit
   - Celsius (C or o) to Kelvin
